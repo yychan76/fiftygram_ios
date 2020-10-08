@@ -48,6 +48,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         filter?.setValue(3, forKey: kCIInputRadiusKey)
         display(filter: filter!)
     }
+    
+    @IBAction func savePhoto() {
+        if original == nil {
+            return
+        }
+        UIImageWriteToSavedPhotosAlbum(imageView.image!, self, #selector(savedImage(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
 
     @IBAction func choosePhoto(_ sender: UIBarButtonItem) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -55,6 +62,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             picker.delegate = self
             picker.sourceType = .photoLibrary
             self.navigationController?.present(picker, animated: true, completion: nil)
+        }
+    }
+    
+    @objc func savedImage(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            let ac = UIAlertController(title: "Unable to save photo", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Saved photo", message: "Your filtered photo has been saved ", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
         }
     }
 

@@ -61,6 +61,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Fiftygram" id="BE2-AU-7lP">
+                        <barButtonItem key="leftBarButtonItem" title="Save Photo" id="yDh-ta-RmT">
+                            <connections>
+                                <action selector="savePhoto" destination="BYZ-38-t0r" id="HKu-uG-Wyr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Choose Photo" id="6iY-Ms-s20">
                             <connections>
                                 <action selector="choosePhoto:" destination="BYZ-38-t0r" id="lXv-rT-Qjv"/>
