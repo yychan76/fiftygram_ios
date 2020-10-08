@@ -36,6 +36,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         filter?.setValue(CIImage(image: original), forKey: kCIInputImageKey)
         display(filter: filter!)
     }
+    
+    @IBAction func applyBloom() {
+        if original == nil {
+            return
+        }
+        
+        let filter = CIFilter(name: "CIBloom")
+        filter?.setValue(CIImage(image: original), forKey: kCIInputImageKey)
+        filter?.setValue(1.0, forKey: kCIInputIntensityKey)
+        filter?.setValue(3, forKey: kCIInputRadiusKey)
+        display(filter: filter!)
+    }
 
     @IBAction func choosePhoto(_ sender: UIBarButtonItem) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
