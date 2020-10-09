@@ -21,25 +21,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-Hf-4n7">
-                                <rect key="frame" x="136" y="514" width="142" height="68"/>
+                                <rect key="frame" x="40" y="492" width="121" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Sepia"/>
                                 <connections>
-                                    <action selector="applySepia" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQK-I2-6Uv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-V9-KpN">
-                                <rect key="frame" x="136" y="590" width="142" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Noir"/>
-                                <connections>
-                                    <action selector="applyNoir" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kg-Qm-y7U"/>
+                                    <action selector="applySepia" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zni-Wd-d03"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N5-ac-Hkj">
-                                <rect key="frame" x="136" y="666" width="142" height="68"/>
+                                <rect key="frame" x="40" y="604" width="121" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Vintage"/>
@@ -48,12 +39,75 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soD-FH-la7">
-                                <rect key="frame" x="136" y="742" width="142" height="68"/>
+                                <rect key="frame" x="40" y="660" width="121" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Bloom"/>
                                 <connections>
                                     <action selector="applyBloom" destination="BYZ-38-t0r" eventType="touchUpInside" id="8rF-6Y-ggj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-Ny-XqM">
+                                <rect key="frame" x="40" y="716" width="121" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Pointillize"/>
+                                <connections>
+                                    <action selector="applyPointillize" destination="BYZ-38-t0r" eventType="touchUpInside" id="YP2-ue-B82"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUy-e6-2uf">
+                                <rect key="frame" x="235" y="538" width="135" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Woodprint"/>
+                                <connections>
+                                    <action selector="applyEdgeWork" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6I-Tu-cbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-l7-Q3D">
+                                <rect key="frame" x="215" y="594" width="175" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Kaleidoscope"/>
+                                <connections>
+                                    <action selector="applyKaleidoscope" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ab-wz-8GS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-V9-KpN">
+                                <rect key="frame" x="40" y="548" width="121" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Noir"/>
+                                <connections>
+                                    <action selector="applyNoir" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kg-Qm-y7U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmi-hG-j9I">
+                                <rect key="frame" x="232" y="650" width="141" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Linescreen"/>
+                                <connections>
+                                    <action selector="applyLineScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKZ-6C-GDc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27f-wN-AW1">
+                                <rect key="frame" x="240" y="706" width="125" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Spotcolor"/>
+                                <connections>
+                                    <action selector="applySpotColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbv-GW-SSL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyU-ce-au1">
+                                <rect key="frame" x="260" y="492" width="84" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Comic"/>
+                                <connections>
+                                    <action selector="applyComic" destination="BYZ-38-t0r" eventType="touchUpInside" id="KjI-lR-IrL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,7 +127,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bloomButton" destination="soD-FH-la7" id="F4V-tW-8r2"/>
+                        <outlet property="comicButton" destination="XyU-ce-au1" id="rti-Fg-j3d"/>
                         <outlet property="imageView" destination="VlZ-kI-Fim" id="D93-b3-AlM"/>
+                        <outlet property="kaleidoscopeButton" destination="iA2-l7-Q3D" id="Kex-P8-U1r"/>
+                        <outlet property="lineScreenButton" destination="lmi-hG-j9I" id="dee-I4-d6D"/>
+                        <outlet property="noirButton" destination="XwY-V9-KpN" id="OUo-YP-89t"/>
+                        <outlet property="pointillizeButton" destination="rqp-Ny-XqM" id="w6w-ow-uNG"/>
+                        <outlet property="sepiaButton" destination="ynd-Hf-4n7" id="x7W-GH-tPg"/>
+                        <outlet property="spotColorButton" destination="27f-wN-AW1" id="14T-h3-WWJ"/>
+                        <outlet property="vintageButton" destination="4N5-ac-Hkj" id="JiS-c1-8gv"/>
+                        <outlet property="woodPrintButton" destination="RUy-e6-2uf" id="kbW-lT-Xpt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
